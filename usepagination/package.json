@@ -1,6 +1,6 @@
 {
   "name": "use-pagination-mui",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
   "main": "./build/index.js",
   "types": "./config.d.ts",

@@ -4,10 +4,7 @@ const usePagination = (
   initialPerPage?: number
 ): {
   page: number
-  changePageEvent: (
-    e: ChangeEvent<HTMLInputElement> | null,
-    number: number
-  ) => void
+  changePageEvent: (e: ChangeEvent<unknown> | null, number: number) => void
   perPage: number
   changePerPageEvent: (e: ChangeEvent<HTMLInputElement>) => void
   changePage: (page: number) => void
@@ -19,7 +16,7 @@ const usePagination = (
   const [arrayPage, setArrayPage] = useState(0)
 
   const changePageEvent = useCallback(
-    (event: ChangeEvent<HTMLInputElement> | null, number: number): void => {
+    (event: ChangeEvent<unknown> | null, number: number): void => {
       setPage(number + 1)
       setArrayPage(number)
     },
