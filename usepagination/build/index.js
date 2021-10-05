@@ -21,6 +21,14 @@ var usePagination = function (initialPerPage) {
         setPage(1);
         setArrayPage(0);
     }, []);
-    return { page: page, changePageEvent: changePageEvent, perPage: perPage, changePerPageEvent: changePerPageEvent, changePage: changePage, arrayPage: arrayPage, changePerPage: changePerPage };
+    return {
+        page: page,
+        changePageEvent: changePageEvent,
+        perPage: perPage,
+        changePerPageEvent: changePerPageEvent,
+        changePage: changePage,
+        arrayPage: arrayPage,
+        changePerPage: changePerPage,
+    };
 };
 export default usePagination;
